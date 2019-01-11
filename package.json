@@ -1,0 +1,11 @@
+{
+  "name": "nxcd-bot",
+  "version": "1.0.0",
+  "description": "Chatbot that opens NXCD headquarters gate for Nextcoders",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rogério Munhoz <rogerio.j.munhoz@gmail.com>",
+  "license": "GPL-3.0"
+}
