@@ -4,11 +4,20 @@
   "description": "Chatbot that opens NXCD headquarters gate for Nextcoders",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:debug": "concurrently 'tsc -w' 'nodemon --watch dist dist/index.js'"
   },
   "author": "Rogério Munhoz <rogerio.j.munhoz@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
-    "@rjmunhoz/botify": "^2.2.4"
+    "@rjmunhoz/botify": "^2.2.5",
+    "sugar-env": "^1.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.9",
+    "typescript": "^3.2.2"
   }
 }
